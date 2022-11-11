@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"taster\startup_stm32f103xb.o"
+"taster\main.o"
+"taster\stm32f1xx_it.o"
+"taster\stm32f1xx_hal_msp.o"
+"taster\stm32f1xx_hal_gpio_ex.o"
+"taster\stm32f1xx_hal_tim.o"
+"taster\stm32f1xx_hal_tim_ex.o"
+"taster\stm32f1xx_hal.o"
+"taster\stm32f1xx_hal_rcc.o"
+"taster\stm32f1xx_hal_rcc_ex.o"
+"taster\stm32f1xx_hal_gpio.o"
+"taster\stm32f1xx_hal_dma.o"
+"taster\stm32f1xx_hal_cortex.o"
+"taster\stm32f1xx_hal_pwr.o"
+"taster\stm32f1xx_hal_flash.o"
+"taster\stm32f1xx_hal_flash_ex.o"
+"taster\stm32f1xx_hal_exti.o"
+"taster\system_stm32f1xx.o"
+--strict --scatter "Taster\Taster.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Taster.map" -o Taster\Taster.axf
